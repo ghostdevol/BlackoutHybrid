@@ -1,0 +1,46 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.blackout.hybrid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:5:5-67
+11-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:7:5-22:19
+14        android:allowBackup="true"
+14-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:8:9-35
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:label="BlackoutHybrid"
+17-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:9:9-39
+18        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+18-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:10:9-65
+19        <activity
+19-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:12:9-20:20
+20            android:name="com.blackout.hybrid.MainActivity"
+20-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:13:13-41
+21            android:configChanges="orientation|keyboardHidden|screenSize"
+21-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:15:13-74
+22            android:exported="true" >
+22-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:14:13-36
+23            <intent-filter>
+23-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:16:13-19:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:17:17-69
+24-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:18:17-77
+26-->/data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/AndroidManifest.xml:18:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

@@ -1,0 +1,7 @@
+com.blackout.hybrid.app-pngs-0 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/build/generated/res/pngs/debug
+com.blackout.hybrid.app-resValues-1 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/build/generated/res/resValues/debug
+com.blackout.hybrid.app-packageDebugResources-2 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.blackout.hybrid.app-packageDebugResources-3 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.blackout.hybrid.app-merged_res-4 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/build/intermediates/merged_res/debug
+com.blackout.hybrid.app-debug-5 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/debug/res
+com.blackout.hybrid.app-main-6 /data/data/com.termux/files/home/android-sdk/BlackoutHybrid/app/src/main/res
