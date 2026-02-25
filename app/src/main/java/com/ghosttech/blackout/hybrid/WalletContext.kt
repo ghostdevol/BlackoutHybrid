@@ -1,4 +1,4 @@
-package com.ghosttech.blackout.hybrid
+package com.ghosttech.blackout
 
 import org.web3j.crypto.Credentials
 import org.web3j.crypto.WalletUtils
