@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.ghosttech.blackout.engine.BlackoutEngine;
+import com.ghosttech.blackout.api.ApiBridge;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -20,7 +21,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+BlackoutEngine engine = new BlackoutEngine();
+engine.setState(EngineState.ACTIVE);
 
+ApiBridge bridge = new ApiBridge(
+    "https://laughing-telegram-r4r59gw5pg7q2p5j5-3000.app.github.dev",
+    engine
+);
+
+String response = bridge.send("/command", "hello".getBytes());
+Log.i("Blackout-Command", "Response: " + response);
         try {
             // 1. Generate a temporary RSA keypair for testing
             KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
