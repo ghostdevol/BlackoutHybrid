@@ -37,4 +37,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.webkit:webkit:1.7.0'
     implementation 'org.web3j:core:4.9.4'
+    implementation 'com.google.android.material:material:1.11.0'
 }
