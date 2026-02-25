@@ -1,6 +1,6 @@
 ><?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ghosttech.blackout">
+    package="com.ghosttech.blackout.hybrid">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true">
 
         <activity
-            android:name=".blackout.MainActivity"
+            android:name=".hybrid.MainActivity"
             android:exported="true">
 
             <intent-filter>
