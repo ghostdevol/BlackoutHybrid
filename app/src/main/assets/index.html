@@ -2,41 +2,53 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Blackout Hybrid</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; }
-        button { padding: 10px 20px; margin: 10px 0; font-size: 16px; }
-        #output { margin-top: 20px; font-size: 18px; }
-    </style>
+<title>Blackout Hybrid</title>
+<style>
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    #output {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+</style>
 </head>
 <body>
 
-    <h1>Blackout Hybrid WebView</h1>
-    <p>JS ↔ Native Bridge Test</p>
+<h1>Blackout Hybrid WebView</h1>
+<p>
+JS ↔ Native Bridge Test
+</p>
 
-    <button onclick="createWallet()">Create Wallet</button>
-    <button onclick="importWallet()">Import Wallet</button>
-    <button onclick="getAddress()">Get Address</button>
+<button onclick="createWallet()">Create Wallet</button>
+<button onclick="importWallet()">Import Wallet</button>
+<button onclick="getAddress()">Get Address</button>
 
-    <div id="output"></div>
+<div id="output"></div>
 
-    <script>
-        function createWallet() {
-            const addr = Blackout.createWallet();
-            document.getElementById('output').innerText = "Created: " + addr;
-        }
+<script>
+function createWallet() {
+const addr = Blackout.createWallet();
+document.getElementById('output').innerText = "Created: " + addr;
+}
 
-        function importWallet() {
-            const mnemonic = prompt("Enter mnemonic:");
-            const addr = Blackout.importWallet(mnemonic);
-            document.getElementById('output').innerText = "Imported: " + addr;
-        }
+function importWallet() {
+const mnemonic = prompt("Enter mnemonic:");
+const addr = Blackout.importWallet(mnemonic);
+document.getElementById('output').innerText = "Imported: " + addr;
+}
 
-        function getAddress() {
-            const addr = Blackout.getAddress();
-            document.getElementById('output').innerText = "Address: " + addr;
-        }
-    </script>
+function getAddress() {
+const addr = Blackout.getAddress();
+document.getElementById('output').innerText = "Address: " + addr;
+}
+</script>
 
 </body>
 </html>
