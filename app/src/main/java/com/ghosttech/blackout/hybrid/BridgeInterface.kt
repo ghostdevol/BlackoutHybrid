@@ -1,4 +1,4 @@
-package com.blackout.hybrid
+package com.blackout
 
 import android.webkit.JavascriptInterface
 
