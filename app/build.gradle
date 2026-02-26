@@ -1,14 +1,9 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-}
-
 android {
-    namespace "com.ghosttech.blackout"
+    namespace "com.ghosttech.blackout.hybrid.hybrid"  // ✅ changed
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.ghosttech.blackout"
+        applicationId "com.ghosttech.blackout.hybrid.hybrid"  // ✅ changed
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -30,12 +25,4 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-}
-
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.webkit:webkit:1.7.0'
-    implementation 'org.web3j:core:4.9.4'
-    implementation 'com.google.android.material:material:1.11.0'
 }
