@@ -1,105 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>GhosTech Designs</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #0f0f0f;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .container {
-    max-width: 900px;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .logo {
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(135deg, #00ffff, #ff00ff);
-    border-radius: 50%;
-    margin: 0 auto 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #111;
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #00ffff;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ff00ff;
-  }
-
-  p {
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .features {
-    text-align: left;
-    margin-top: 2rem;
-  }
-
-  .features li {
-    margin-bottom: 0.5rem;
-  }
-
-  a {
-    color: #00ffff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackout Wallet Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #ff4f4f;
+        }
+        h2 {
+            color: #ffa500;
+            margin-top: 30px;
+        }
+        code, pre {
+            background-color: #1e1e1e;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        a {
+            color: #4fc3f7;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+    <header>
+        <h1>Blackout Wallet Explorer</h1>
+        <p>A secure, efficient, and lightweight wallet exploration tool.</p>
+    </header>
 
-  <!-- Logo -->
-  <div class="logo">G</div>
+    <div class="section">
+        <h2>Overview</h2>
+        <p>The <strong>Blackout Wallet Explorer</strong> allows users to view, track, and interact with blockchain wallets safely. It is designed to provide transparency while keeping sensitive wallet data secure.</p>
+    </div>
 
-  <!-- Brand Name -->
-  <h1>GhosTech Designs</h1>
-  <h2>Innovative, Clean, Impactful</h2>
+    <div class="section">
+        <h2>Features</h2>
+        <ul>
+            <li>View wallet balances and transaction history</li>
+            <li>Supports multiple blockchain networks</li>
+            <li>Lightweight and responsive interface</li>
+            <li>Advanced search and filtering of transactions</li>
+            <li>Offline mode for enhanced privacy</li>
+        </ul>
+    </div>
 
-  <!-- About -->
-  <p>GhosTech Designs is a creative brand specializing in modern digital design, 2D & 3D graphics, and interactive web experiences. Our goal is to deliver clean, impactful, and highly aesthetic designs that resonate with technology and modern culture enthusiasts.</p>
+    <div class="section">
+        <h2>Security Model</h2>
+        <p>The Blackout Wallet Explorer uses a multi-layered security approach:</p>
+        <ul>
+            <li><strong>Local Wallet Storage:</strong> Private keys and sensitive data remain local on your device. The explorer never uploads your keys to the internet.</li>
+            <li><strong>Encrypted Data:</strong> All wallet data is encrypted at rest using industry-standard algorithms.</li>
+            <li><strong>Read-Only Blockchain Access:</strong> The tool interacts with blockchain networks in read-only mode by default, preventing unauthorized transactions.</li>
+            <li><strong>Open Source Transparency:</strong> Codebase can be audited to verify security practices.</li>
+        </ul>
+        <p>Example of local key usage:</p>
+        <pre><code>wallet.Unlock(key)
+defer wallet.Destroy()
+sig, err := wallet.Sign(tx)</code></pre>
+    </div>
 
-  <!-- Features / Services -->
-  <ul class="features">
-    <li>Brand & Logo Design</li>
-    <li>Web & UI Design</li>
-    <li>2D & 3D Graphics</li>
-    <li>Interactive Dashboards & Visualizations</li>
-    <li>Modern Color & Typography Styling</li>
-    <li>Open to collaborations on creative projects</li>
-  </ul>
+    <div class="section">
+        <h2>Getting Started</h2>
+        <ol>
+            <li>Download and install Blackout Wallet Explorer from the official source.</li>
+            <li>Open the application and select "Import Wallet" or "Create New Wallet".</li>
+            <li>View balances and transactions securely without exposing your private keys.</li>
+        </ol>
+    </div>
 
-  <!-- Contact / Links -->
-  <p>Learn more: <a href="https://github.com/Ghostdevol" target="_blank">GitHub</a> | <a href="#" target="_blank">Portfolio</a></p>
+    <div class="section">
+        <h2>Important Notes</h2>
+        <ul>
+            <li>Never share your private keys or seed phrases.</li>
+            <li>Always verify the source of downloads.</li>
+            <li>Use offline mode for maximum security when inspecting sensitive wallets.</li>
+        </ul>
+    </div>
 
-</div>
+    <footer style="text-align:center; margin-top:50px; color:#888;">
+        &copy; 2026 Blackout Wallet Explorer | Secure Wallet Management
+    </footer>
 
 </body>
 </html>
